@@ -102,7 +102,8 @@ header {
     justify-content: flex-start;
     text-decoration: none;
     color: black;
-
+    margin-top: 15px;
+align-items: center;
     gap: 10px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
@@ -216,3 +217,192 @@ header {
 }
 
 /* parte inferior del header */
+#carouselExampleSlidesOnly{
+    position: relative;
+    background-color:  rgb(234, 237, 237);
+}
+.links{
+    text-decoration: underline;
+    color: black;
+}
+.carousel-item{
+    position: relative;
+    left: 22em;
+}
+/* Main */
+.promocion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: linear-gradient(to bottom, #fafafa 0%, #f0f0f0 50%, #e8e8e0 100%);
+    background-image: url('https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto/eaa5bd2b-1355-417a-937b-ebd9c3bcb19a/LEBRON+XXIII+HEAT.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 80vh;
+    overflow: hidden;
+    background-color: #f5f5f0;
+}
+
+.letras {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    max-width: 800px;
+    text-align: center;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.nuevo {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.Lebron {
+    font-size: 96px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    line-height: 1.1;
+    margin-bottom: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5), 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn-comprar {
+    margin-top: 20px;
+}
+
+.btn-comprar button {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    padding: 14px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-comprar button:hover {
+    background-color: black;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Responsive para la sección promocional */
+@media (min-width: 1920px) {
+    .promocion {
+        min-height: 90vh;
+    }
+    
+    .Lebron {
+        font-size: 120px;
+    }
+    
+    .nuevo {
+        font-size: 22px;
+    }
+    
+    .btn-comprar button {
+        padding: 16px 48px;
+        font-size: 20px;
+    }
+    
+    .letras {
+        max-width: 1000px;
+    }
+}
+
+@media (min-width: 1440px) and (max-width: 1919px) {
+    .Lebron {
+        font-size: 110px;
+    }
+    
+    .nuevo {
+        font-size: 20px;
+    }
+    
+    .btn-comprar button {
+        padding: 15px 44px;
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .promocion {
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .Lebron {
+        font-size: 56px;
+    }
+    
+    .letras {
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 768px) {
+    .promocion {
+        min-height: 60vh;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .letras {
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        max-width: 90%;
+    }
+    
+    .Lebron {
+        font-size: 42px;
+    }
+    
+    .nuevo {
+        font-size: 14px;
+    }
+    
+    .btn-comprar button {
+        padding: 10px 24px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .promocion {
+        min-height: 50vh;
+    }
+    
+    .Lebron {
+        font-size: 32px;
+    }
+    
+    .nuevo {
+        font-size: 12px;
+    }
+    
+    .btn-comprar button {
+        padding: 8px 20px;
+        font-size: 12px;
+    }
+}
+
