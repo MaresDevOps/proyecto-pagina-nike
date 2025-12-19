@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+a {
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 500;
+    font-family: "Helvetica Now Text Medium", Helvetica, Arial, sans-serif;
+}
+
+
+ul {
+    list-style: none;
+    list-style-type: none;
+}
+
+/* Encabezado parte superior de la pagina */
+.encabezado {
+    display: flex;
+    max-width: 1920px;
+    justify-content: space-between;
+    padding: 0 48px;
+    background-color: rgb(234, 237, 237);
+    margin: auto;
+    align-items: center;
+}
+
+.jordan-link {
+    color: rgb(18, 18, 18);
+    margin: 10px;
+    padding: 8px 24px 8px 30px;
+}
+
+/* Menu usuario parte de arriba */
+.menu-Navegacion-User {
+    display: flex;
+    gap: 10px;
+    margin: 10px;
+}
+
+.opciones {
+    display: flex;
+    justify-content: flex-start;
+    text-decoration: none;
+    color: black;
+
+    gap: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Header */
+header {
+    background-color: rgb(255, 255, 255);
+
+}
+
+.contenido-menu-principal {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+
+}
+
+/* Style Logo Nike */
+.swoosh-svg {
+    -webkit-transform: scale(1.33);
+    -ms-transform: scale(1.33);
+    transform: scale(1.33);
+    width: 100%;
+    height: 100%;
+    padding-left: 40px;
+
+}
+
+.logo-Nike-link {
+    color: rgb(18, 18, 18);
+    padding: 0px 24px 0px 30px;
+
+
+}
+
+
+
+/* Style opciones menu */
+
+.lista-de-opciones-usuario {
+    display: flex;
+    gap: 30px;
+
+}
+
+.opciones-menu-principal {
+    display: flex;
+    justify-content: flex-start;
+    text-decoration: none;
+    color: black;
+
+    gap: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+/* opciones-de-usuario-contenedor */
+.opciones-de-usuario-contenedor {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    align-items: center;
+    padding-right: 40px;
+}
+
+/* Buscar style */
+.contenedor-buscar {
+    display: flex;
+    border-radius: 24px;
+    background-color: rgb(234, 237, 237);
+    height: 100%;
+    width: 100%;
+}
+
+.buscar {
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    border-color: transparent;
+    background-color: rgb(234, 237, 237);
+    cursor: pointer;
+    transition: .1s;
+}
+
+.buscar:hover {
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    border-color: transparent;
+    background-color: rgb(209, 209, 209);
+    cursor: pointer;
+
+}
+
+.Input-Buscar {
+    border: 0;
+    cursor: text;
+    margin: 0;
+    padding: 7px 0px 9px 2px;
+    width: 100%;
+    box-sizing: border-box;
+    font: var(--podium-cds-typography-body1);
+
+    background-color: var(--podium-cds-color-bg-secondary);
+    height: 36px;
+    border-radius: 24px;
+    border-color: transparent;
+    transition: .1s;
+}
+
+.Input-Buscar:hover {
+    background-color: rgb(209, 209, 209);
+
+
+}
+
+.favoritos {
+
+    height: 36px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 7px 0px 9px 2px;
+    border: 0;
+
+    margin: 0;
+    min-width: 36px;
+    background: inherit;
+    color: var(--podium-cds-color-text-primary);
+    border-radius: var(--podium-cds-button-border-radius);
+    transition: .1s;
+}
+
+.favoritos:hover {
+    background-color: rgb(209, 209, 209);
+    border-radius: 50%;
+}
+
+.carrito {
+
+    height: 36px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 7px 0px 9px 2px;
+    border: 0;
+
+    margin: 0;
+    min-width: 36px;
+    background: inherit;
+    color: var(--podium-cds-color-text-primary);
+    border-radius: var(--podium-cds-button-border-radius);
+    transition: .1s;
+}
+
+.carrito:hover {
+    background-color: rgb(209, 209, 209);
+    border-radius: 50%;
+}
+
+/* parte inferior del header */
