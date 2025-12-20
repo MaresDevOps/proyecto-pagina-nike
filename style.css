@@ -58,7 +58,10 @@ ul {
 /* Header */
 header {
     background-color: rgb(255, 255, 255);
-
+    position: relative;
+    z-index: 100;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
 .contenido-menu-principal {
@@ -110,6 +113,138 @@ header {
     font-weight: bold;
 }
 
+.opciones-menu-principal p {
+    text-decoration: none;
+    margin: 0;
+}
+
+/* Estilos para menús desplegables */
+.opciones-menu {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 40px 60px;
+    min-width: 1000px;
+    max-width: min(1200px, 95vw);
+    z-index: 1000;
+    margin-top: 0;
+    box-sizing: border-box;
+}
+
+.dropdown-regalos {
+    min-width: 900px;
+}
+
+.opciones-menu:first-child .dropdown-menu {
+    left: 0;
+    transform: none;
+    margin-left: 0;
+}
+
+.opciones-menu:first-child .dropdown-regalos {
+    position: absolute;
+    left: 0;
+    transform: translateX(calc(-50vw + 50% - 48px));
+    margin-left: 0;
+    padding-left: 48px;
+    padding-right: 48px;
+    width: calc(100vw - 96px);
+    max-width: calc(1920px - 96px);
+    box-sizing: border-box;
+}
+
+.dropdown-lo-nuevo {
+    min-width: 800px;
+}
+
+.dropdown-hombre,
+.dropdown-mujer {
+    min-width: 1100px;
+}
+
+.dropdown-ofertas {
+    min-width: 900px;
+}
+
+.dropdown-ninos {
+    min-width: 1100px;
+    max-width: 95vw;
+    left: 50%;
+    transform: translateX(-50%);
+    box-sizing: border-box;
+}
+
+.opciones-menu:hover .dropdown-menu {
+    display: flex;
+    gap: 60px;
+}
+
+.dropdown-columna {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    min-width: 180px;
+}
+
+.dropdown-titulo {
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dropdown-subtitulo {
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dropdown-columna a {
+    font-size: 14px;
+    color: #6b6969;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.dropdown-columna a:hover {
+    color: #000;
+}
+
+.opciones-menu:hover .opciones-menu-principal,
+.opciones-menu:hover .opciones-menu-principal p {
+    text-decoration: underline;
+}
+
+.opciones-de-usuario-menu {
+    position: relative;
+}
+
+.opciones-menu:first-child .dropdown-regalos {
+    position: absolute;
+    left: 0;
+    transform: translateX(calc((100% - 100vw) / 2 - 48px));
+    margin-left: 0;
+    padding-left: 48px;
+    padding-right: 48px;
+    width: calc(100vw - 96px);
+    max-width: calc(1920px - 96px);
+    box-sizing: border-box;
+}
 
 /* opciones-de-usuario-contenedor */
 .opciones-de-usuario-contenedor {
@@ -735,22 +870,92 @@ header {
 .imagen-doble {
     width: 100%;
 }
-.regala-deporte h3{
-font-weight: 900;
-margin-bottom: 10px;
-margin-top: 40px;
-font-size: 70px;
-font-family: sans-serif;
+
+.regala-deporte h3 {
+    font-weight: 900;
+    margin-bottom: 10px;
+    margin-top: 40px;
+    font-size: 70px;
+    font-family: sans-serif;
 }
-.regala-deporte p{
-font-weight: bold   ;
-font-family: sans-serif;
+
+.regala-deporte p {
+    font-weight: bold;
+    font-family: sans-serif;
 }
 
 .contenedor-botones-seccion-regala-deporte {
     display: flex;
     justify-content: center;
 }
+
+/* parte debajo de la seccion regalos */
+.encabezado-regalos {
+    margin-left: 30px;
+}
+
+.regalos {
+
+    min-height: 300px;
+}
+
+.lista-regalos {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    padding-left: 0;
+    overflow-x: scroll;
+    ;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+
+.precio-regalos {
+    margin: 20px;
+}
+
+.imagen-regalo {
+    display: flex;
+    justify-content: center;
+    min-height: 300px;
+
+}
+
+.img-regalo {
+    min-height: 300px;
+    max-height: 300px;
+}
+
+.precio-regalos {
+    margin-top: 20px;
+}
+
+.precio-regalos button {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: 1px solid black;
+
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 187.6px;
+    height: 36px;
+}
+
+.precio-regalos button:hover {
+    background-color: rgb(60, 59, 59);
+    color: white;
+
+}
+
+
+
 
 /* botones seccion regalo  */
 .comprar-Sportswear {
@@ -761,7 +966,7 @@ font-family: sans-serif;
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
     border: 1px solid black;
-    
+
     font-size: 10px;
     font-weight: 600;
     cursor: pointer;
@@ -777,7 +982,7 @@ font-family: sans-serif;
 .comprar-Sportswear button:hover {
     background-color: rgb(60, 59, 59);
     color: white;
-    
+
 }
 
 .comprar-seccion-regalo {
@@ -785,10 +990,10 @@ font-family: sans-serif;
 }
 
 .comprar-seccion-regalo button {
-     background-color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
     color: rgb(255, 251, 251);
     border: 1px solid black;
-    
+
     font-size: 10px;
     font-weight: 600;
     cursor: pointer;
@@ -803,38 +1008,39 @@ font-family: sans-serif;
 }
 
 .comprar-seccion-regalo button:hover {
-       background-color: rgb(60, 59, 59);
+    background-color: rgb(60, 59, 59);
     color: white;
 }
 
-    /* Seccion de tenis  */
+/* Seccion de tenis  */
 
-    .encabezado-seccion-tenis{
-        margin-left: 30px;
-    }
-    .conetendor-tenis{
-        display: flex;
-        gap: 10px;
-        overflow-x: scroll;
-    }
-    .subcontenedor-tenis{
-      
-        background: radial-gradient(
-  circle at center,
-  #2b3238 0%,
-  #1f252a 45%,
-  #0c0e10 100%
-);
-width: 300px;
-height: 328px;
-    }
-    .imagen-tenis {
+.encabezado-seccion-tenis {
+    margin-left: 30px;
+}
+
+.conetendor-tenis {
+    display: flex;
+    gap: 10px;
+    overflow-x: scroll;
+}
+
+.subcontenedor-tenis {
+
+    background: radial-gradient(circle at center,
+            #2b3238 0%,
+            #1f252a 45%,
+            #0c0e10 100%);
+    width: 300px;
+    height: 328px;
+}
+
+.imagen-tenis {
     display: flex;
     align-items: flex-start;
     justify-content: end;
     flex-direction: column;
     position: relative;
-    background: linear-gradient(to bottom, #fafafa 0%, #f0f0f0 50%, #e8e8e0 100%); 
+    background: linear-gradient(to bottom, #fafafa 0%, #f0f0f0 50%, #e8e8e0 100%);
     background-size: auto;
     background-position: center;
     background-repeat: no-repeat;
@@ -846,7 +1052,181 @@ height: 328px;
 
 }
 
+.link-tenis {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
 
+.Cantidad-modelos-tenis {
+    position: absolute;
+    top: 30px;
+    right: 25px;
+    background-color: rgba(54, 59, 66, 0.8);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 20;
+    white-space: nowrap;
+    margin-right: 10px;
+}
+
+/* Encabezado footer */
+.encabezado-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+
+    gap: 50px;
+
+}
+
+.seccion-tenis-calzado {
+    display: flex;
+    flex-direction: column;
+
+    padding: 10px 10px 10px 10px;
+}
+
+.lista-tenis-calzado {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0;
+    margin-top: 20px;
+    min-width: 198px;
+    min-height: 268px;
+
+}
+
+.lista-tenis-calzado a {
+    text-decoration: none;
+    color: #6b6969;
+    width: 184px;
+    height: 28px;
+    font-weight: bold;
+    transition: .1s;
+}
+
+/* seccion de Ropa deportiva  */
+.seccion-ropa-deportiva {
+    display: flex;
+    flex-direction: column;
+
+    padding: 10px 10px 10px 10px;
+}
+
+.lista-ropa-deportiva {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0;
+    margin-top: 20px;
+    min-width: 198px;
+    min-height: 268px;
+
+}
+
+.lista-ropa-deportiva a {
+    text-decoration: none;
+    color: #6b6969;
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+    transition: .1s;
+}
+
+/* seccion equipos-jerseys */
+.seccion-equipos-jerseys {
+    display: flex;
+    flex-direction: column;
+
+    padding: 10px 10px 10px 10px;
+}
+
+.lista-equipos-jerseys {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0;
+    margin-top: 20px;
+    min-width: 198px;
+    min-height: 268px;
+
+}
+
+.lista-equipos-jerseys a {
+    text-decoration: none;
+    color: #6b6969;
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+    transition: .1s;
+}
+
+/* seccion bebes-niños */
+
+.seccion-bebes-niños {
+    display: flex;
+    flex-direction: column;
+
+    padding: 10px 10px 10px 10px;
+}
+
+.lista-bebes-niños {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0;
+    margin-top: 20px;
+    min-width: 198px;
+    min-height: 268px;
+
+}
+
+.lista-bebes-niños a {
+    text-decoration: none;
+    color: #6b6969;
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+    transition: .1s;
+}
+/* efectos hover a la etiqueta a */
+.lista-bebes-niños a:hover, .lista-equipos-jerseys a:hover, .lista-ropa-deportiva a:hover, .lista-tenis-calzado a:hover {
+   color: #000000;
+
+}
+/* Efecto lista oculta */
+.elemento-oculto{
+    display: none;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.lista-tenis-calzado{
+    transform: translateZ(0);
+    transition: all .5s;
+}
+
+/* Mostrar elementos ocultos al pasar el mouse sobre el ul o el contenedor */
+.lista-tenis-calzado:hover .elemento-oculto,
+.contendor-lista-tenis-calzado:hover .elemento-oculto {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Mostrar elementos ocultos al pasar el mouse sobre cualquier li visible */
+.opcion-tenis-calzado:not(.elemento-oculto):hover ~ .elemento-oculto {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
 /* Responsive para la sección promocional */
 @media (min-width: 1920px) {
     .promocion {
