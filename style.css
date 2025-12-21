@@ -86,7 +86,7 @@ header {
 .logo-Nike-link {
     color: rgb(18, 18, 18);
     padding: 0px 24px 0px 30px;
-    
+
 
 }
 
@@ -377,14 +377,15 @@ header {
 /* parte inferior del header */
 #carouselExampleSlidesOnly {
     position: relative;
-    
+
     background-color: rgb(234, 237, 237);
     width: 100%;
 }
-.carousel-inner{
+
+.carousel-inner {
     width: 100%;
-   text-align: left;
-   margin-left: 23%;
+    text-align: left;
+    margin-left: 23%;
     height: auto;
 }
 
@@ -394,7 +395,7 @@ header {
 }
 
 .carousel-item {
-   
+
     position: relative;
     margin: auto;
 }
@@ -961,7 +962,7 @@ header {
     padding: 0;
     margin-top: 20px;
 
-  
+
 
 }
 
@@ -991,7 +992,7 @@ header {
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-.lista-encabezado-footer{
+.lista-encabezado-footer {
     transform: translateZ(0);
     transition: all .5s;
 }
@@ -1087,6 +1088,10 @@ footer {
     display: none;
 }
 
+.nds-summary-icons {
+    display: none;
+}
+
 /* Responsive para la sección promocional */
 @media (min-width: 1920px) {
     .promocion {
@@ -1152,7 +1157,9 @@ footer {
     .imagen-doble2 {
         display: none;
     }
+
 }
+
 @media (max-width: 964px) {
     .opciones-menu-principal {
         display: none;
@@ -1165,7 +1172,11 @@ footer {
     .Input-Buscar {
         display: none;
     }
-        .carousel-inner{margin: auto; text-align: center;}
+
+    .carousel-inner {
+        margin: auto;
+        text-align: center;
+    }
 
     .promocion {
         min-height: 60vh;
@@ -1219,6 +1230,60 @@ footer {
 
     .contenedor-info {
         flex-direction: column;
+    }
+
+    .encabezado-footer {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .contendor-listas-footer {
+        display: none;
+        margin: 0;
+    }
+
+    .contendor-lista-footer {
+        display: none;
+        margin: 0;
+    }
+
+    .encabezado-lista-footer {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #e3e0e0;
+        padding-bottom: 10px;
+    }
+
+    .contenedor-region {
+        border-bottom: 1px solid #e3e0e0;
+        padding-bottom: 10px;
+    }
+
+    .contenedor-info-footer {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .contenedor-footer {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .contenedores-listas {
+
+        padding: 24px;
+    }
+
+    footer {
+        padding: 0 0 0 0;
+    }
+
+    .swoosh-svg {
+        padding-left: 0;
+    }
+
+    .nds-summary-icons {
+        display: block;
     }
 }
 
@@ -1234,7 +1299,10 @@ footer {
     .Input-Buscar {
         display: none;
     }
-        .carousel-inner{margin: auto;}
+
+    .carousel-inner {
+        margin: auto;
+    }
 
     .promocion {
         min-height: 60vh;
@@ -1289,17 +1357,83 @@ footer {
     .contenedor-info {
         flex-direction: column;
     }
+
+    .encabezado-footer {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .contendor-listas-footer {
+        display: none;
+        margin: 0;
+    }
+
+    .contendor-lista-footer {
+        display: none;
+        margin: 0;
+    }
+
+    .encabezado-lista-footer {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #e3e0e0;
+        padding-bottom: 10px;
+    }
+
+    .contenedor-region {
+        border-bottom: 1px solid #e3e0e0;
+        padding-bottom: 10px;
+    }
+
+    .contenedor-info-footer {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .contenedor-footer {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .contenedores-listas {
+
+        padding: 24px;
+    }
+
+    footer {
+        padding: 0 0 0 0;
+    }
+
+    .swoosh-svg {
+        padding-left: 0;
+    }
+
+    .nds-summary-icons {
+        display: block;
+    }
 }
 
-@media (min-width: 480px) and (max-width: 600px){
-    .opciones-menu-principal {display: none; }
+@media (min-width: 480px) and (max-width: 600px) {
+    .opciones-menu-principal {
+        display: none;
+    }
 
-    .menu-hamburguesa {display: block;}
+    .menu-hamburguesa {
+        display: block;
+    }
 
-    .Input-Buscar { display: none;}
-    
-    .promocion { min-height: 50vh;}
-    .carousel-inner{margin: auto;}
+    .Input-Buscar {
+        display: none;
+    }
+
+    .promocion {
+        min-height: 50vh;
+    }
+
+    .carousel-inner {
+        margin: auto;
+    }
+
     .Lebron {
         font-size: 32px;
     }
@@ -1349,54 +1483,89 @@ footer {
     .contenedor-info {
         flex-direction: column;
     }
-    .encabezado-footer {flex-direction: column;
-    gap: 0px;
+
+    .encabezado-footer {
+        flex-direction: column;
+        gap: 0px;
     }
-    .contendor-listas-footer{
+
+    .contendor-listas-footer {
         display: none;
         margin: 0;
     }
-    .contendor-lista-footer{
+
+    .contendor-lista-footer {
         display: none;
         margin: 0;
     }
-    .encabezado-lista-footer{
+
+    .encabezado-lista-footer {
         display: flex;
         justify-content: space-between;
         border-bottom: 1px solid #e3e0e0;
         padding-bottom: 10px;
     }
-    .contenedor-region{
-          border-bottom: 1px solid #e3e0e0;
+
+    .contenedor-region {
+        border-bottom: 1px solid #e3e0e0;
         padding-bottom: 10px;
     }
-    .contenedor-info-footer{
-           flex-direction: column;
-           padding: 0;
+
+    .contenedor-info-footer {
+        flex-direction: column;
+        padding: 0;
     }
-         .contenedor-footer{
-            margin-left: 0;
-            margin-right: 0;
-         }
-     .contenedores-listas{
-    
+
+    .contenedor-footer {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .contenedores-listas {
+
         padding: 24px;
-      }
-   
-      footer{
+    }
+
+    footer {
         padding: 0 0 0 0;
-      }
+    }
+
+    .swoosh-svg {
+        padding-left: 0;
+    }
+
+    .nds-summary-icons {
+        display: block;
+    }
+
+    .swoosh-svg {
+        padding-left: 0;
+    }
+
 
 }
-@media (max-width: 480px){
-    .opciones-menu-principal {display: none; }
 
-    .menu-hamburguesa {display: block;}
+@media (max-width: 480px) {
+    .opciones-menu-principal {
+        display: none;
+    }
 
-    .Input-Buscar { display: none;}
-    
-    .promocion { min-height: 50vh;}
-    .carousel-inner{margin: auto;}
+    .menu-hamburguesa {
+        display: block;
+    }
+
+    .Input-Buscar {
+        display: none;
+    }
+
+    .promocion {
+        min-height: 50vh;
+    }
+
+    .carousel-inner {
+        margin: auto;
+    }
+
     .Lebron {
         font-size: 32px;
     }
@@ -1446,42 +1615,58 @@ footer {
     .contenedor-info {
         flex-direction: column;
     }
-  .encabezado-footer {flex-direction: column;
-    gap: 0px;
+
+    .encabezado-footer {
+        flex-direction: column;
+        gap: 0px;
     }
-    .contendor-listas-footer{
+
+    .contendor-listas-footer {
         display: none;
         margin: 0;
     }
-    .contendor-lista-footer{
+
+    .contendor-lista-footer {
         display: none;
         margin: 0;
     }
-    .encabezado-lista-footer{
+
+    .encabezado-lista-footer {
         display: flex;
         justify-content: space-between;
         border-bottom: 1px solid #e3e0e0;
         padding-bottom: 10px;
     }
-    .contenedor-region{
-          border-bottom: 1px solid #e3e0e0;
+
+    .contenedor-region {
+        border-bottom: 1px solid #e3e0e0;
         padding-bottom: 10px;
     }
-    .contenedor-info-footer{
-           flex-direction: column;
-           padding: 0;
-    }
-         .contenedor-footer{
-            margin-left: 0;
-            margin-right: 0;
-         }
-     .contenedores-listas{
-    
-        padding: 24px;
-      }
-   
-      footer{
-        padding: 0 0 0 0;
-      }
-}
 
+    .contenedor-info-footer {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .contenedor-footer {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .contenedores-listas {
+
+        padding: 24px;
+    }
+
+    footer {
+        padding: 0 0 0 0;
+    }
+
+    .swoosh-svg {
+        padding-left: 0;
+    }
+
+    .nds-summary-icons {
+        display: block;
+    }
+}
