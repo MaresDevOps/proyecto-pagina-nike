@@ -1208,24 +1208,105 @@ header {
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-.lista-tenis-calzado{
+.lista-tenis-calzado,
+.lista-ropa-deportiva,
+.lista-equipos-jerseys,
+.lista-bebes-niños {
     transform: translateZ(0);
     transition: all .5s;
 }
 
 /* Mostrar elementos ocultos al pasar el mouse sobre el ul o el contenedor */
 .lista-tenis-calzado:hover .elemento-oculto,
-.contendor-lista-tenis-calzado:hover .elemento-oculto {
+.contendor-lista-tenis-calzado:hover .elemento-oculto,
+.lista-ropa-deportiva:hover .elemento-oculto,
+.contendor-lista-ropa-deportiva:hover .elemento-oculto,
+.lista-equipos-jerseys:hover .elemento-oculto,
+.contendor-lista-equipos-jerseys:hover .elemento-oculto,
+.lista-bebes-niños:hover .elemento-oculto,
+.contendor-lista-bebes-niños:hover .elemento-oculto {
     display: block;
     opacity: 1;
     transform: translateY(0);
 }
 
 /* Mostrar elementos ocultos al pasar el mouse sobre cualquier li visible */
-.opcion-tenis-calzado:not(.elemento-oculto):hover ~ .elemento-oculto {
+.opcion-tenis-calzado:not(.elemento-oculto):hover ~ .elemento-oculto,
+.opcion-ropa-deportiva:not(.elemento-oculto):hover ~ .elemento-oculto,
+.opcion-equipos-jerseys:not(.elemento-oculto):hover ~ .elemento-oculto,
+.opcion-bebes-niños:not(.elemento-oculto):hover ~ .elemento-oculto {
     display: block;
     opacity: 1;
     transform: translateY(0);
+}
+/* Footer */
+.space-footer{
+width: 100%;
+height: 100px;
+}
+.contenedor-footer {
+    display: flex;
+margin-left: 50px;
+margin-right: 50px;
+ flex-direction: column;
+
+}
+
+footer{
+border-top: 1px solid #e3e0e0;
+padding: 48px;
+}
+.contenedor-info-footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+.encabezado-lista-footer{
+   font-size: 14px;
+}
+.lista-footer{
+       display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0;
+    margin-top: 20px;
+    min-width: 198px;
+    min-height: 268px;
+}
+.lista-footer a{
+   text-decoration: none;
+    color: #6b6969;
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    font-weight: bold;
+    
+}
+.contenedor-region button{
+    border-color: transparent;
+    background-color: white;
+    color: #6b6969;
+    font-weight: bold;
+}
+.lista-subfooter{
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    gap: 15px;
+ 
+}
+
+.guias-footer{
+    display: flex;
+}
+.lista-subfooter a{
+      text-decoration: none;
+    color: #6b6969;
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    font-weight: bold;
+    
 }
 /* Responsive para la sección promocional */
 @media (min-width: 1920px) {
