@@ -86,7 +86,7 @@ header {
 .logo-Nike-link {
     color: rgb(18, 18, 18);
     padding: 0px 24px 0px 30px;
-
+    
 
 }
 
@@ -262,7 +262,7 @@ header {
 .contenedor-buscar {
     display: flex;
     border-radius: 24px;
-    background-color: rgb(234, 237, 237);
+    background-color: transparent;
     height: 100%;
     width: 100%;
 }
@@ -272,7 +272,7 @@ header {
     height: 100%;
     width: 100%;
     border-color: transparent;
-    background-color: rgb(234, 237, 237);
+    background-color: transparent;
     cursor: pointer;
     transition: .1s;
 }
@@ -282,6 +282,7 @@ header {
     height: 100%;
     width: 100%;
     border-color: transparent;
+
     background-color: rgb(209, 209, 209);
     cursor: pointer;
 
@@ -351,10 +352,40 @@ header {
     border-radius: 50%;
 }
 
+.menu-hamburguesa {
+    display: none;
+    height: 36px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 7px 0px 9px 2px;
+    border: 0;
+    justify-content: center;
+    margin: 0;
+    min-width: 36px;
+    background: inherit;
+    color: var(--podium-cds-color-text-primary);
+    border-radius: var(--podium-cds-button-border-radius);
+    transition: .1s;
+}
+
+.menu-hamburguesa:hover {
+    background-color: rgb(209, 209, 209);
+    border-radius: 50%;
+}
+
+
 /* parte inferior del header */
 #carouselExampleSlidesOnly {
     position: relative;
+    
     background-color: rgb(234, 237, 237);
+    width: 100%;
+}
+.carousel-inner{
+    width: 100%;
+   text-align: left;
+   margin-left: 23%;
+    height: auto;
 }
 
 .links {
@@ -363,8 +394,9 @@ header {
 }
 
 .carousel-item {
+   
     position: relative;
-    left: 22em;
+    margin: auto;
 }
 
 /* Main */
@@ -723,12 +755,12 @@ header {
 }
 
 .lista-regalos {
-  display: flex;
+    display: flex;
     gap: 20px;
     list-style-type: none;
     padding-left: 0;
     overflow-x: auto;
-    justify-content: center; 
+    justify-content: center;
     margin-top: 30px;
 
 }
@@ -910,30 +942,30 @@ header {
     display: flex;
     justify-content: center;
     margin-top: 100px;
-
+    width: 100%;
     gap: 50px;
 
 }
 
-.seccion-tenis-calzado {
+.seccion-encabezado-footer {
     display: flex;
     flex-direction: column;
 
     padding: 10px 10px 10px 10px;
 }
 
-.lista-tenis-calzado {
+.lista-encabezado-footer {
     display: flex;
     flex-direction: column;
     gap: 20px;
     padding: 0;
     margin-top: 20px;
-    min-width: 198px;
-    min-height: 268px;
+
+  
 
 }
 
-.lista-tenis-calzado a {
+.lista-encabezado-footer a {
     text-decoration: none;
     color: #6b6969;
     width: 184px;
@@ -942,96 +974,11 @@ header {
     transition: .1s;
 }
 
-/* seccion de Ropa deportiva  */
-.seccion-ropa-deportiva {
-    display: flex;
-    flex-direction: column;
 
-    padding: 10px 10px 10px 10px;
-}
 
-.lista-ropa-deportiva {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 0;
-    margin-top: 20px;
-    min-width: 198px;
-    min-height: 268px;
-
-}
-
-.lista-ropa-deportiva a {
-    text-decoration: none;
-    color: #6b6969;
-    width: 100%;
-    height: 100%;
-    font-weight: bold;
-    transition: .1s;
-}
-
-/* seccion equipos-jerseys */
-.seccion-equipos-jerseys {
-    display: flex;
-    flex-direction: column;
-
-    padding: 10px 10px 10px 10px;
-}
-
-.lista-equipos-jerseys {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 0;
-    margin-top: 20px;
-    min-width: 198px;
-    min-height: 268px;
-
-}
-
-.lista-equipos-jerseys a {
-    text-decoration: none;
-    color: #6b6969;
-    width: 100%;
-    height: 100%;
-    font-weight: bold;
-    transition: .1s;
-}
-
-/* seccion bebes-niños */
-
-.seccion-bebes-niños {
-    display: flex;
-    flex-direction: column;
-
-    padding: 10px 10px 10px 10px;
-}
-
-.lista-bebes-niños {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 0;
-    margin-top: 20px;
-    min-width: 198px;
-    min-height: 268px;
-
-}
-
-.lista-bebes-niños a {
-    text-decoration: none;
-    color: #6b6969;
-    width: 100%;
-    height: 100%;
-    font-weight: bold;
-    transition: .1s;
-}
 
 /* efectos hover a la etiqueta a */
-.lista-bebes-niños a:hover,
-.lista-equipos-jerseys a:hover,
-.lista-ropa-deportiva a:hover,
-.lista-tenis-calzado a:hover {
+.lista-encabezado-footer a:hover {
     color: #000000;
 
 }
@@ -1044,23 +991,14 @@ header {
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-.lista-tenis-calzado,
-.lista-ropa-deportiva,
-.lista-equipos-jerseys,
-.lista-bebes-niños {
+.lista-encabezado-footer{
     transform: translateZ(0);
     transition: all .5s;
 }
 
 /* Mostrar elementos ocultos al pasar el mouse sobre el ul o el li */
-.lista-tenis-calzado:hover .elemento-oculto,
-.lista-tenis-calzado li:hover .elemento-oculto,
-.lista-ropa-deportiva:hover .elemento-oculto,
-.lista-ropa-deportiva li:hover .elemento-oculto,
-.lista-equipos-jerseys:hover .elemento-oculto,
-.lista-equipos-jerseys li:hover .elemento-oculto,
-.lista-bebes-niños:hover .elemento-oculto,
-.lista-bebes-niños li:hover .elemento-oculto {
+.lista-encabezado-footer:hover .elemento-oculto,
+.lista-encabezado-footer li:hover .elemento-oculto {
     display: block;
     opacity: 1;
     transform: translateY(0);
@@ -1083,7 +1021,7 @@ header {
 
 footer {
     border-top: 1px solid #e3e0e0;
-    padding: 48px;
+    padding: 48px 24px;
 }
 
 .contenedor-info-footer {
@@ -1215,8 +1153,20 @@ footer {
         display: none;
     }
 }
+@media (max-width: 964px) {
+    .opciones-menu-principal {
+        display: none;
+    }
 
-@media (max-width: 768px) {
+    .menu-hamburguesa {
+        display: block;
+    }
+
+    .Input-Buscar {
+        display: none;
+    }
+        .carousel-inner{margin: auto; text-align: center;}
+
     .promocion {
         min-height: 60vh;
         background-size: cover;
@@ -1243,13 +1193,18 @@ footer {
         font-size: 14px;
     }
 
+    .encabezado {
+        display: none;
+    }
+
     .lista-equipos {
         margin: 15px;
     }
 
-       .lista-regalos {
-        justify-content: flex-start; 
+    .lista-regalos {
+        justify-content: flex-start;
     }
+
     .img-regalo {
         width: 440px;
     }
@@ -1267,11 +1222,84 @@ footer {
     }
 }
 
-@media (max-width: 480px) {
-    .promocion {
-        min-height: 50vh;
+@media (max-width: 768px) {
+    .opciones-menu-principal {
+        display: none;
     }
 
+    .menu-hamburguesa {
+        display: block;
+    }
+
+    .Input-Buscar {
+        display: none;
+    }
+        .carousel-inner{margin: auto;}
+
+    .promocion {
+        min-height: 60vh;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .letras {
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        max-width: 90%;
+    }
+
+    .Lebron {
+        font-size: 42px;
+    }
+
+    .nuevo {
+        font-size: 14px;
+    }
+
+    .btn-comprar button {
+        padding: 10px 24px;
+        font-size: 14px;
+    }
+
+    .encabezado {
+        display: none;
+    }
+
+    .lista-equipos {
+        margin: 15px;
+    }
+
+    .lista-regalos {
+        justify-content: flex-start;
+    }
+
+    .img-regalo {
+        width: 440px;
+    }
+
+    .imagen-equipo img {
+        width: 435px;
+    }
+
+    .imagen-doble2 {
+        display: none;
+    }
+
+    .contenedor-info {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 600px){
+    .opciones-menu-principal {display: none; }
+
+    .menu-hamburguesa {display: block;}
+
+    .Input-Buscar { display: none;}
+    
+    .promocion { min-height: 50vh;}
+    .carousel-inner{margin: auto;}
     .Lebron {
         font-size: 32px;
     }
@@ -1284,9 +1312,15 @@ footer {
         padding: 8px 20px;
         font-size: 12px;
     }
-     .lista-regalos {
-        justify-content: flex-start; 
+
+    .encabezado {
+        display: none;
     }
+
+    .lista-regalos {
+        justify-content: flex-start;
+    }
+
     .img-regalo {
         width: 440px;
     }
@@ -1315,4 +1349,139 @@ footer {
     .contenedor-info {
         flex-direction: column;
     }
+    .encabezado-footer {flex-direction: column;
+    gap: 0px;
+    }
+    .contendor-listas-footer{
+        display: none;
+        margin: 0;
+    }
+    .contendor-lista-footer{
+        display: none;
+        margin: 0;
+    }
+    .encabezado-lista-footer{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #e3e0e0;
+        padding-bottom: 10px;
+    }
+    .contenedor-region{
+          border-bottom: 1px solid #e3e0e0;
+        padding-bottom: 10px;
+    }
+    .contenedor-info-footer{
+           flex-direction: column;
+           padding: 0;
+    }
+         .contenedor-footer{
+            margin-left: 0;
+            margin-right: 0;
+         }
+     .contenedores-listas{
+    
+        padding: 24px;
+      }
+   
+      footer{
+        padding: 0 0 0 0;
+      }
+
 }
+@media (max-width: 480px){
+    .opciones-menu-principal {display: none; }
+
+    .menu-hamburguesa {display: block;}
+
+    .Input-Buscar { display: none;}
+    
+    .promocion { min-height: 50vh;}
+    .carousel-inner{margin: auto;}
+    .Lebron {
+        font-size: 32px;
+    }
+
+    .nuevo {
+        font-size: 12px;
+    }
+
+    .btn-comprar button {
+        padding: 8px 20px;
+        font-size: 12px;
+    }
+
+    .encabezado {
+        display: none;
+    }
+
+    .lista-regalos {
+        justify-content: flex-start;
+    }
+
+    .img-regalo {
+        width: 440px;
+    }
+
+    .lista-equipos {
+        margin: 15px;
+    }
+
+    .seccion2 {
+        display: none;
+    }
+
+    .imagen-equipo img {
+        width: 307px;
+    }
+
+    .imagen-doble {
+        display: none;
+    }
+
+    .imagen-doble2 {
+        display: block;
+        width: 100%;
+    }
+
+    .contenedor-info {
+        flex-direction: column;
+    }
+  .encabezado-footer {flex-direction: column;
+    gap: 0px;
+    }
+    .contendor-listas-footer{
+        display: none;
+        margin: 0;
+    }
+    .contendor-lista-footer{
+        display: none;
+        margin: 0;
+    }
+    .encabezado-lista-footer{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #e3e0e0;
+        padding-bottom: 10px;
+    }
+    .contenedor-region{
+          border-bottom: 1px solid #e3e0e0;
+        padding-bottom: 10px;
+    }
+    .contenedor-info-footer{
+           flex-direction: column;
+           padding: 0;
+    }
+         .contenedor-footer{
+            margin-left: 0;
+            margin-right: 0;
+         }
+     .contenedores-listas{
+    
+        padding: 24px;
+      }
+   
+      footer{
+        padding: 0 0 0 0;
+      }
+}
+
