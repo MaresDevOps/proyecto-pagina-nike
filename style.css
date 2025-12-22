@@ -19,6 +19,16 @@ ul {
     list-style-type: none;
 }
 
+.contendor-pagina {
+    max-width: 1920px;
+    margin: auto;
+}
+
+.contenedor-footer {
+    max-width: 1920px;
+    margin: auto;
+}
+
 /* Encabezado parte superior de la pagina */
 .encabezado {
     display: flex;
@@ -1092,7 +1102,7 @@ footer {
     display: none;
 }
 
-/* Responsive para la sección promocional */
+/* Diseño responsivo cualquier tipo de pantalla*/
 @media (min-width: 1920px) {
     .promocion {
         min-height: 90vh;
@@ -1118,6 +1128,19 @@ footer {
     .imagen-doble2 {
         display: none;
     }
+
+    .promocion {
+        background-size: cover;
+    }
+
+    .promocion1 {
+        background-size: cover;
+    }
+
+    .proximos-estrenos {
+        background-size: cover;
+    }
+
 }
 
 @media (min-width: 1440px) and (max-width: 1919px) {
@@ -1287,6 +1310,7 @@ footer {
     }
 }
 
+/* Media Queries Tablets  */
 @media (max-width: 768px) {
     .opciones-menu-principal {
         display: none;
@@ -1413,6 +1437,7 @@ footer {
     }
 }
 
+/* Media Queries Telefono(mas grandes) ,Tablets  */
 @media (min-width: 480px) and (max-width: 600px) {
     .opciones-menu-principal {
         display: none;
@@ -1545,6 +1570,7 @@ footer {
 
 }
 
+/* Media Queries Telefono */
 @media (max-width: 480px) {
     .opciones-menu-principal {
         display: none;
